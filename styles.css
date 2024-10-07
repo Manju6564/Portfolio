@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative; /* Required for the pseudo-element */
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+.social-button {
+    color: white;
+    font-size: 24px; /* Adjust size as needed */
+    transition: color 0.3s;
+}
+
+.social-button:hover {
+    color: #555; /* Change color on hover */
+}
+
+/* Animation effect for the colored bar */
+nav ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, red, blue); /* Linear gradient from red to blue */
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px; /* Adjust position of the bar */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul li:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    margin-right: 20px;
+}
+
+.header-info {
+    text-align: left;
+}
+
+.header-info h1 {
+    margin: 0;
+}
+
+.header-info h3 {
+    margin: 5px 0;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+  
+}
+
+.experience-box {
+    background-color: #f9f9f9; /* Light background for the boxes */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 20px; /* Increased border radius */
+    padding: 15px;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.experience-box:hover {
+    background-color: black; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.experience-box h3 {
+    margin: 0 0 10px 0; /* Space below the job title */
+}
+
+.experience-box p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.project-box {
+    position: relative; /* Required for the pseudo-element */
+    background-color: #f9f9f9; /* Light background for the boxes */
+    border-radius: 20px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Two boxes per row */
+    overflow: hidden; /* Prevent overflow of pseudo-element */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.project-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Match the box's border-radius */
+    background: linear-gradient(grey, white);
+    transform: translate(-100%, -100%); /* Start position offscreen */
+    transition: transform 0.5s; /* Smooth transition */
+    z-index: 0; /* Behind the content */
+}
+
+.project-box:hover::before {
+    transform: translate(0, 0); /* Animate to cover the box */
+}
+
+.project-box h3, .project-box p {
+    position: relative; /* Bring text above the pseudo-element */
+    z-index: 1; /* Ensure text is above the background */
+}
+
+.project-box h3 {
+    margin: 0 0 10px 0; /* Space below the project title */
+}
+
+.project-box p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+
+#about {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-container {
+    background-color: #fff; /* Background color for the container */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.about-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+p {
+    margin: 10px 0; /* Space between paragraphs */
+    line-height: 1.6; /* Improve readability */
+}

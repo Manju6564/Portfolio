@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Manjunath</h1>
+      <!-- Main heading added here -->
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              class="social-button"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/yourusername"
+              target="_blank"
+              class="social-button"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <div class="header-container">
+        <img src="profile.jpg" alt="Your Profile Picture" class="profile-pic" />
+        <div class="header-info">
+          <h1>Your Name</h1>
+          <h3>Your Profession</h3>
+          <div class="buttons">
+            <a href="your-resume.pdf" class="button">Download Resume</a>
+            <a href="#contact" class="button">Contact</a>
+          </div>
+        </div>
+      </div>
+      <h2>About Me</h2>
+      <div class="about-container">
+        <p>
+          Hello! I'm Manjunath, a passionate Developer with a love for web
+          development, design, programming, etc. With a Experience in Frontend
+          Development, I thrive on turning ideas into reality and creating
+          engaging experiences through technology. I specialize in HTML, CSS,
+          JavaScript, React, Angular. My goal is to not only deliver functional
+          solutions but also to ensure they are user-friendly and visually
+          appealing. Throughout my journey, I have worked on various projects,
+          including LIC ePGS schemes. Each project has sharpened my skills and
+          allowed me to explore new challenges. When I'm not coding, you can
+          find me reading books, Travelling, playing video games, etc. I'm
+          always eager to learn and grow, whether that's through exploring new
+          technologies or collaborating with others in the industry. Feel free
+          to explore my portfolio to see some of my work, and don’t hesitate to
+          reach out if you'd like to connect!
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-container">
+        <div class="experience-box">
+          <h3>Job Title 1</h3>
+          <p>Company Name</p>
+          <p>Location</p>
+          <p>Brief description of your role and achievements.</p>
+        </div>
+        <div class="experience-box">
+          <h3>Job Title 2</h3>
+          <p>Company Name</p>
+          <p>Location</p>
+          <p>Brief description of your role and achievements.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-box">
+          <h3>Project Title 1</h3>
+          <p>Brief description of your project.</p>
+        </div>
+        <div class="project-box">
+          <h3>Project Title 2</h3>
+          <p>Brief description of your project.</p>
+        </div>
+        <div class="project-box">
+          <h3>Project Title 3</h3>
+          <p>Brief description of your project.</p>
+        </div>
+        <div class="project-box">
+          <h3>Project Title 4</h3>
+          <p>Brief description of your project.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="example@gmail.com"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Your Name</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
